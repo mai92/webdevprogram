@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>Formulir Pendaftaran</h1>
+      <label for="">Nama</label>
+      <input type="text" name="name" placeholder="Masukkan nama anda" />
+      <br />
+      <br />
+      <label for="">Email</label>
+      <input
+        required
+        type="email"
+        name="email"
+        placeholder="Masukkan email anda"
+      />
+      <br />
+      <br />
+      <label for="">Alamat</label>
+      <textarea
+        name="alamat"
+        id=""
+        cols="20"
+        rows="3"
+        placeholder="tulis alamat anda"
+      ></textarea>
+      <br />
+      <br />
+      <label for="">Jenis Kelamin</label>
+      <select name="kelamin" id="kelamin">
+        <option value="man">Pria</option>
+        <option value="woman">Wanita</option>
+      </select>
+      <br />
+      <br />
+      <input type="submit" value="Kirim Data" />
+    </form>
+  </body>
+</html>
