@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1 id="judul">Belajar DOM</h1>
+    <div id="kontainer"></div>
+    <script>
+      const paragrap = document.createElement("p");
+      paragrap.innerHTML = "Paragraf baru";
+
+      // Menambahkan Elemen
+      const kontainer = document.getElementById("kontainer");
+      kontainer.appendChild(paragrap);
+
+      // Menghapus Elemen
+      const judul = document.getElementById("judul");
+      judul.remove();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh</title>
+  </head>
+  <body>
+    <h1 id="labelNama">Adam</h1>
+    <button onclick="edit()">Edit</button>
+    <hr />
+
+    <input type="text" id="inputNama" />
+    <button onclick="save()">Simpan</button>
+    <script>
+      function edit() {
+        const labelNama = document.getElementById("labelNama");
+        const inputNama = document.getElementById("inputNama");
+
+        inputNama.value = labelNama.innerHTML;
+      }
+
+      function save() {
+        const labelNama = document.getElementById("labelNama");
+        const inputNama = document.getElementById("inputNama");
+
+        labelNama.innerHTML = inputNama.value;
+      }
+    </script>
+  </body>
+</html>
